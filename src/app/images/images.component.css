@@ -1,0 +1,11 @@
+input {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+img {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  max-height: 100%;
+  max-width: 100%;
+}

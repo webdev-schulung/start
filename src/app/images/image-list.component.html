@@ -1,0 +1,17 @@
+<table class="table table-hover table-bordered">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Url</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let url of get(); let i = index">
+      <th scope="row">{{i}}</th>
+      <td>{{url}}</td>
+      <td>
+        <img (click)="remove(i)" alt="x" width="20px" src="https://img.icons8.com/color/48/000000/delete-forever.png"/>
+      </td>
+    </tr>
+  </tbody>
+ </table>
