@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ImageService } from "./image.service";
+import { Component } from '@angular/core'
+import { ImageService } from "./image.service"
 
 @Component({
   selector: 'app-image-input',
@@ -8,10 +8,10 @@ import { ImageService } from "./image.service";
 })
 export class ImageInputComponent {
 
-  readonly placeholder: string = "Enter new image Url (must be jpg)";
+  readonly placeholder: string = "Enter new image Url (must be jpg)"
 
   constructor(private imageService: ImageService) { }
 
-  add = (event: Event) => this.imageService.add((<HTMLInputElement>event.target).value);
+  add = (event: Event) => this.imageService.add((<HTMLInputElement>event.target).value)
 
 }

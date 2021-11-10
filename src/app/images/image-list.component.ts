@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ImageService } from "./image.service";
+import { Component } from '@angular/core'
+import { ImageService } from "./image.service"
 
 @Component({
   selector: 'app-image-list',
@@ -10,10 +10,10 @@ export class ImageListComponent {
 
   constructor(private imageService: ImageService) { }
 
-  get = () => this.imageService?.getUrls();
+  get = () => this.imageService?.getUrls()
 
   remove(index: number) {
-    this.imageService.remove(index);
+    this.imageService.remove(index)
   }
 
 }

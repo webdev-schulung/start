@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {ImageService} from "./image.service";
+import { Component } from '@angular/core'
+import {ImageService} from "./image.service"
 
 @Component({
   selector: 'app-image-next',
@@ -9,6 +9,6 @@ export class ImageNextComponent {
 
   constructor(private imageService: ImageService) { }
 
-  change = () => this.imageService.next();
+  change = () => this.imageService.next()
 
 }

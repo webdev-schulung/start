@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {ImageService} from "../images/image.service";
+import { Component } from '@angular/core'
+import {ImageService} from "../images/image.service"
 
 @Component({
   selector: 'app-failed',
