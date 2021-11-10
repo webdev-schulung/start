@@ -11,6 +11,12 @@ import { ImageListComponent } from './images/image-list.component'
 import { ImageNextComponent } from './images/image-next.component'
 import { ImageDisplayComponent } from './images/image-display.component'
 import { HttpClientModule } from "@angular/common/http"
+import { Routes, RouterModule } from "@angular/router";
+
+const appRoutes: Routes = [
+  { path: 'images', component: ImagesComponent },
+  { path: 'image', component: ImageDisplayComponent }
+]
 
 @NgModule({
   declarations: [
@@ -24,9 +30,10 @@ import { HttpClientModule } from "@angular/common/http"
     ImageDisplayComponent
   ],
     imports: [
-        BrowserModule,
-        FormsModule,
-        HttpClientModule
+      BrowserModule,
+      FormsModule,
+      HttpClientModule,
+      RouterModule.forRoot(appRoutes)
     ],
   providers: [],
   bootstrap: [AppComponent]
