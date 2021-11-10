@@ -12,10 +12,15 @@ import { ImageNextComponent } from './images/image-next.component'
 import { ImageDisplayComponent } from './images/image-display.component'
 import { HttpClientModule } from "@angular/common/http"
 import { Routes, RouterModule } from "@angular/router";
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'images', component: ImagesComponent },
-  { path: 'image', component: ImageDisplayComponent }
+  { path: 'image', component: ImageDisplayComponent },
+  { path: '**', component: PageNotFoundComponent }
 ]
 
 @NgModule({
@@ -27,7 +32,10 @@ const appRoutes: Routes = [
     ImageInputComponent,
     ImageListComponent,
     ImageNextComponent,
-    ImageDisplayComponent
+    ImageDisplayComponent,
+    PageNotFoundComponent,
+    HomeComponent,
+    NavbarComponent
   ],
     imports: [
       BrowserModule,
