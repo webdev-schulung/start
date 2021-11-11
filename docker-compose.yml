@@ -1,7 +1,11 @@
 version: "3"
 
 services:
-  server:
+  simple-server:
+    image: simple/server
+    ports:
+      - 8081:8080
+  web:
     image: nginx
     ports:
       - 8000:80
