@@ -3,11 +3,11 @@ version: "3"
 services:
   simple-server:
     container_name: backend
-    image: simple/server
+    image: simple/backend
     ports:
       - 8081:8081
   web:
     container_name: frontend
-    image: simple/frontent
+    image: simple/frontend
     ports:
-      - 80:80
+      - 8080:80
